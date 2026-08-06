@@ -124,12 +124,16 @@ df.dtypes
 ```python
 df.isnull().sum()
 ```
+<img width="268" height="532" alt="image" src="https://github.com/user-attachments/assets/ba1f75c7-2db3-4239-b876-a521e85fef47" />
+
 
 Percentage of Missing Values
 
 ```python
 df.isnull().mean()*100
 ```
+<img width="315" height="551" alt="image" src="https://github.com/user-attachments/assets/a0049076-8784-47a1-8c0f-77794ff1e2e3" />
+
 
 Visualization
 
@@ -137,6 +141,8 @@ Visualization
 sns.heatmap(df.isnull(), cbar=False)
 plt.show()
 ```
+<img width="758" height="658" alt="image" src="https://github.com/user-attachments/assets/c18f3ada-6964-4635-bf1b-bd41a5666e64" />
+
 
 ---
 
@@ -163,6 +169,8 @@ Examples
 ```python
 df["match_type"].value_counts()
 ```
+<img width="307" height="172" alt="image" src="https://github.com/user-attachments/assets/5f5f12ee-06ea-40b8-90bb-828858017303" />
+
 
 Visualization
 
@@ -170,6 +178,8 @@ Visualization
 sns.countplot(data=df,x="match_type")
 plt.show()
 ```
+<img width="816" height="552" alt="image" src="https://github.com/user-attachments/assets/aa81f108-1787-4fa3-847d-e7d816f4b941" />
+
 
 Histogram
 
@@ -177,6 +187,9 @@ Histogram
 sns.histplot(data=df,x="year")
 plt.show()
 ```
+<img width="803" height="552" alt="image" src="https://github.com/user-attachments/assets/26c24e09-991a-4723-90e5-6ef38c300961" />
+
+
 
 ---
 
