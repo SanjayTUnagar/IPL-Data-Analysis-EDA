@@ -87,9 +87,17 @@ import matplotlib.pyplot as plt
 # 📥 Load Dataset
 
 ```python
-df = pd.read_csv("IPL.csv")
+import pandas as pd
+df = pd.read_csv('/content/drive/MyDrive/IPL.csv')
 df.head()
 ```
+```python
+<img width="1690" height="482" alt="image" src="https://github.com/user-attachments/assets/644daecf-1d89-45b1-a90d-b1814213c015" />
+
+```
+
+
+
 
 ---
 
