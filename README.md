@@ -411,14 +411,18 @@ After completing this project, you will understand:
 
 # 👨‍💻 Author
 
-**Sanjay Unagar**
+### Sanjay Unagar
+**Data Analyst | Python | SQL | Excel | Power BI | Pandas | Numpy | Matplotlib | Seaborn | Data Visualization**
 
-Data Analyst
+🌐 **Portfolio:** https://sanjayunagar.netlify.app
 
-- LinkedIn: https://www.linkedin.com/in/sanjayunagar/
-- Portfolio: https://sanjayunagar.netlify.app/
-- GitHub: https://github.com/SanjayTUnagar
+💼 **LinkedIn:** https://www.linkedin.com/in/sanjayunagar/
+
+🐙 **GitHub:** https://github.com/SanjayTUnagar
 
 ---
 
-# ⭐ If you found this project useful, don't forget to Star the repository!
+# ⭐ Support
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
+
