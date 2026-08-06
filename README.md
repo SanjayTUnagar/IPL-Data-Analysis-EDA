@@ -94,11 +94,6 @@ df.head()
 
 <img width="1690" height="482" alt="image" src="https://github.com/user-attachments/assets/644daecf-1d89-45b1-a90d-b1814213c015" />
 
-
-
-
-
-
 ---
 
 # 🔍 Dataset Understanding
@@ -127,7 +122,7 @@ df.isnull().sum()
 <img width="268" height="532" alt="image" src="https://github.com/user-attachments/assets/ba1f75c7-2db3-4239-b876-a521e85fef47" />
 
 
-Percentage of Missing Values
+## Percentage of Missing Values
 
 ```python
 df.isnull().mean()*100
@@ -135,7 +130,7 @@ df.isnull().mean()*100
 <img width="315" height="551" alt="image" src="https://github.com/user-attachments/assets/a0049076-8784-47a1-8c0f-77794ff1e2e3" />
 
 
-Visualization
+## Visualization
 
 ```python
 sns.heatmap(df.isnull(), cbar=False)
@@ -160,7 +155,7 @@ df.duplicated().sum()
 
 Analyzing one variable at a time.
 
-Examples
+## Examples
 
 - Match Type
 - Event Name
@@ -172,7 +167,7 @@ df["match_type"].value_counts()
 <img width="307" height="172" alt="image" src="https://github.com/user-attachments/assets/5f5f12ee-06ea-40b8-90bb-828858017303" />
 
 
-Visualization
+## Visualization
 
 ```python
 sns.countplot(data=df,x="match_type")
@@ -181,7 +176,7 @@ plt.show()
 <img width="816" height="552" alt="image" src="https://github.com/user-attachments/assets/aa81f108-1787-4fa3-847d-e7d816f4b941" />
 
 
-Histogram
+## Histogram
 
 ```python
 sns.histplot(data=df,x="year")
@@ -197,7 +192,7 @@ plt.show()
 
 Analyzing relationships between two variables.
 
-Example
+## Example
 
 ```python
 sns.countplot(data=df,x="match_type",hue="year")
@@ -206,7 +201,7 @@ plt.show()
 <img width="813" height="541" alt="image" src="https://github.com/user-attachments/assets/f72cbfc2-c6a3-436f-96e5-7fa7bab00f77" />
 
 
-Scatter Plot
+## Scatter Plot
 
 ```python
 sns.scatterplot(data=df,
@@ -238,7 +233,7 @@ plt.show()
 
 # 📦 Outlier Detection
 
-Box Plot
+## Box Plot
 
 ```python
 sns.boxplot(data=df,x="year")
@@ -268,7 +263,7 @@ plt.show()
 
 # 💡 Important Insights
 
-Examples
+## Examples
 
 ### Matches Played Per Year
 
@@ -322,7 +317,7 @@ df["day_name"] = df["date"].dt.day_name()
 
 ---
 
-Visualization:
+## Visualization:
 
 ```python
 import seaborn as sns
