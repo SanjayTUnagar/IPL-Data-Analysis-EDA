@@ -203,6 +203,8 @@ Example
 sns.countplot(data=df,x="match_type",hue="year")
 plt.show()
 ```
+<img width="813" height="541" alt="image" src="https://github.com/user-attachments/assets/f72cbfc2-c6a3-436f-96e5-7fa7bab00f77" />
+
 
 Scatter Plot
 
@@ -212,6 +214,8 @@ sns.scatterplot(data=df,
                 y="year")
 plt.show()
 ```
+<img width="818" height="542" alt="image" src="https://github.com/user-attachments/assets/3d001024-3b68-4c5a-912e-c48ed06d6eb9" />
+
 
 ---
 
@@ -228,6 +232,7 @@ sns.scatterplot(
 )
 plt.show()
 ```
+<img width="770" height="548" alt="image" src="https://github.com/user-attachments/assets/2263c40e-42e1-479e-9bff-39fd588c9ab2" />
 
 ---
 
@@ -239,6 +244,7 @@ Box Plot
 sns.boxplot(data=df,x="year")
 plt.show()
 ```
+<img width="768" height="552" alt="image" src="https://github.com/user-attachments/assets/6739b0f5-d750-4556-b529-463fe45a5bc2" />
 
 ---
 
@@ -256,6 +262,7 @@ sns.heatmap(
 )
 plt.show()
 ```
+<img width="691" height="552" alt="image" src="https://github.com/user-attachments/assets/9fba2341-cc03-46a7-a8f3-dcf50ec1813f" />
 
 ---
 
@@ -268,6 +275,7 @@ Examples
 ```python
 df["year"].value_counts().sort_index()
 ```
+<img width="215" height="696" alt="image" src="https://github.com/user-attachments/assets/231dad3c-d1d6-4012-891a-a54d224cb8ce" />
 
 ---
 
@@ -276,6 +284,7 @@ df["year"].value_counts().sort_index()
 ```python
 df["city"].value_counts()
 ```
+<img width="302" height="628" alt="image" src="https://github.com/user-attachments/assets/bcf184ba-a795-4aa6-b070-7a33cadcbec5" />
 
 ---
 
@@ -284,6 +293,7 @@ df["city"].value_counts()
 ```python
 df["player_of_match"].value_counts()
 ```
+<img width="335" height="596" alt="image" src="https://github.com/user-attachments/assets/4e55b788-c6a0-470f-9ce2-4b082ad05f52" />
 
 ---
 
@@ -309,6 +319,25 @@ df["month"] = df["date"].dt.month
 df["day"] = df["date"].dt.day
 df["day_name"] = df["date"].dt.day_name()
 ```
+
+---
+
+Visualization:
+
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+sns.countplot(data=df, x="day_name", 
+              order=df["day_name"].value_counts().index)
+
+plt.title("IPL Matches by Day of Week")
+plt.xticks(rotation=45)
+plt.show()
+```
+<img width="802" height="637" alt="image" src="https://github.com/user-attachments/assets/855485ab-ca3f-4f73-995d-ff71c1fcd640" />
+
+
 
 ---
 
